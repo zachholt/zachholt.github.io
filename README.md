@@ -1,6 +1,6 @@
 # zachholt.github.io
 
-Public site and app metadata host for Tweetiful.
+Personal projects hub and app metadata host.
 
 - Homepage: `https://zachholt.github.io/`
 - Tweetiful support: `https://zachholt.github.io/tweetiful/`

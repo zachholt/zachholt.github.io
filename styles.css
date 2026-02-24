@@ -178,6 +178,61 @@ h1 {
   padding: 1rem;
 }
 
+.project-grid {
+  margin-top: 0.9rem;
+  display: grid;
+  gap: 0.9rem;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.project-card {
+  background: var(--surface-muted);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  padding: 1rem;
+}
+
+.project-card h3 {
+  margin: 0.3rem 0 0;
+  font-family: "Manrope", sans-serif;
+  font-size: 1.15rem;
+}
+
+.project-card p {
+  color: var(--text-muted);
+  margin: 0.6rem 0 0;
+}
+
+.badge {
+  margin: 0;
+  color: var(--accent);
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.project-links {
+  margin-top: 0.85rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+}
+
+.project-links a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.45rem 0.7rem;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  text-decoration: none;
+  color: var(--text);
+  background: #fff;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
 .card h2 {
   margin: 0;
   font-size: 1.05rem;
@@ -263,7 +318,8 @@ a:hover {
 
 @media (max-width: 860px) {
   .grid,
-  .link-list {
+  .link-list,
+  .project-grid {
     grid-template-columns: 1fr;
   }
 

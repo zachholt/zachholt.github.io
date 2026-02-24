@@ -3,15 +3,15 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Tweetiful by Zach Holt</title>
+    <title>Zach Holt Projects</title>
     <meta
       name="description"
-      content="Tweetiful helps you capture clean, customizable screenshots from X posts and export them in seconds."
+      content="Projects by Zach Holt, including Tweetiful and other app work."
     />
-    <meta property="og:title" content="Tweetiful by Zach Holt" />
+    <meta property="og:title" content="Zach Holt Projects" />
     <meta
       property="og:description"
-      content="Capture and customize clean tweet screenshots in seconds."
+      content="A portfolio-style landing page for Zach Holt projects."
     />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://zachholt.github.io/" />
@@ -29,81 +29,107 @@
 
     <header class="site-header">
       <div class="container nav-wrap">
-        <p class="brand">Tweetiful</p>
+        <p class="brand">Zach Holt</p>
         <nav aria-label="Primary">
           <ul class="nav-list">
-            <li><a href="#app">App</a></li>
-            <li><a href="#policies">Policies</a></li>
-            <li><a href="#dev">Developer</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#featured">Featured</a></li>
+            <li><a href="#resources">Resources</a></li>
           </ul>
         </nav>
       </div>
     </header>
 
     <main id="main" class="container">
-      <section id="app" class="hero" aria-labelledby="hero-title">
-        <p class="eyebrow">iOS App</p>
-        <h1 id="hero-title">Capture clean tweet visuals in seconds.</h1>
+      <section id="featured" class="hero" aria-labelledby="hero-title">
+        <p class="eyebrow">Projects Hub</p>
+        <h1 id="hero-title">Building practical products with focused UX.</h1>
         <p class="hero-copy">
-          Tweetiful turns any public X post into polished screenshots you can
-          save or share. Control branding, media visibility, and export quality
-          with a focused workflow.
+          This is the central page for my public projects. Each project has its
+          own dedicated page, repo, and support links.
         </p>
         <div class="hero-actions">
-          <a class="button button-primary" href="https://apps.apple.com/us/app/tweetiful/id6743678727">Download on the App Store</a>
-          <a class="button button-secondary" href="https://zachholt.github.io/tweetiful/">Tweetiful Support & Legal</a>
-          <a class="button button-secondary" href="https://github.com/zachholt/TweetShot">View Source Project</a>
+          <a class="button button-primary" href="#projects">Browse Projects</a>
+          <a class="button button-secondary" href="https://github.com/zachholt">GitHub Profile</a>
         </div>
       </section>
 
-      <section class="grid" aria-label="Feature highlights">
-        <article class="card">
-          <h2>Fast capture</h2>
-          <p>
-            Paste a tweet URL, render instantly, and export to Photos in one
-            pass.
-          </p>
-        </article>
-        <article class="card">
-          <h2>Precise controls</h2>
-          <p>
-            Toggle user elements, quote content, and media size for the exact
-            layout you want.
-          </p>
-        </article>
-        <article class="card">
-          <h2>Built for creators</h2>
-          <p>
-            Designed for social teams, founders, and anyone producing polished
-            content fast.
-          </p>
-        </article>
-      </section>
+      <section id="projects" class="panel" aria-labelledby="projects-title">
+        <h2 id="projects-title">Projects</h2>
+        <div class="project-grid" role="list">
+          <article class="project-card" role="listitem">
+            <p class="badge">iOS</p>
+            <h3>Tweetiful</h3>
+            <p>
+              Capture clean visuals from X posts with customizable layout and
+              export controls.
+            </p>
+            <div class="project-links">
+              <a href="https://apps.apple.com/us/app/tweetiful/id6743678727">App Store</a>
+              <a href="https://zachholt.github.io/tweetiful/">Project Page</a>
+              <a href="https://github.com/zachholt/TweetShot">Source</a>
+            </div>
+          </article>
 
-      <section id="policies" class="panel" aria-labelledby="policies-title">
-        <h2 id="policies-title">Policies and support</h2>
-        <div class="link-list" role="list">
-          <a role="listitem" class="link-tile" href="https://zachholt.github.io/tweetiful/">
-            <span>Support</span>
-            <strong>Help and contact</strong>
-          </a>
-          <a role="listitem" class="link-tile" href="https://zachholt.github.io/tweetiful/privacy.html">
-            <span>Privacy Policy</span>
-            <strong>How data is handled</strong>
-          </a>
-          <a role="listitem" class="link-tile" href="https://zachholt.github.io/tweetiful/terms.html">
-            <span>Terms of Service</span>
-            <strong>Usage terms</strong>
-          </a>
+          <article class="project-card" role="listitem">
+            <p class="badge">Web</p>
+            <h3>Tweetiful Policy Site</h3>
+            <p>
+              Dedicated support, privacy, and terms pages used for App Store
+              metadata and compliance.
+            </p>
+            <div class="project-links">
+              <a href="https://zachholt.github.io/tweetiful/">Support</a>
+              <a href="https://zachholt.github.io/tweetiful/privacy.html">Privacy</a>
+              <a href="https://zachholt.github.io/tweetiful/terms.html">Terms</a>
+            </div>
+          </article>
+
+          <article class="project-card" role="listitem">
+            <p class="badge">Infra</p>
+            <h3>App Ads Verification</h3>
+            <p>
+              Root domain ad verification file for AdMob publisher ownership and
+              app-ads.txt compliance.
+            </p>
+            <div class="project-links">
+              <a href="https://zachholt.github.io/app-ads.txt">View app-ads.txt</a>
+              <a href="https://github.com/zachholt/zachholt.github.io">Site Repo</a>
+            </div>
+          </article>
         </div>
       </section>
 
-      <section id="dev" class="panel" aria-labelledby="dev-title">
-        <h2 id="dev-title">Developer resources</h2>
+      <section class="grid" aria-label="Focus areas">
+        <article class="card">
+          <h2>Shipping fast</h2>
+          <p>
+            Lean release cycles with practical product decisions and real-world
+            feedback loops.
+          </p>
+        </article>
+        <article class="card">
+          <h2>Product quality</h2>
+          <p>
+            Clear onboarding, stable export flows, and production-minded
+            monetization setup.
+          </p>
+        </article>
+        <article class="card">
+          <h2>Documentation-first</h2>
+          <p>
+            Public docs and policy pages stay aligned with shipped app behavior.
+          </p>
+        </article>
+      </section>
+
+      <section id="resources" class="panel" aria-labelledby="resources-title">
+        <h2 id="resources-title">Resources</h2>
         <p>
-          AdMob app-ads verification file is published at the root domain and
-          available here:
-          <a href="https://zachholt.github.io/app-ads.txt">/app-ads.txt</a>
+          For support requests or collaboration, use
+          <a href="mailto:lovelupapp@gmail.com">lovelupapp@gmail.com</a>. The
+          ad verification file remains available at
+          <a href="https://zachholt.github.io/app-ads.txt">/app-ads.txt</a>.
         </p>
       </section>
     </main>
