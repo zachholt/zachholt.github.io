@@ -4,22 +4,15 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Zach Holt Projects</title>
-    <meta
-      name="description"
-      content="Projects by Zach Holt, including Tweetiful and other app work."
-    />
+    <meta name="description" content="Just building apps I thought would be nice." />
     <meta property="og:title" content="Zach Holt Projects" />
-    <meta
-      property="og:description"
-      content="A portfolio-style landing page for Zach Holt projects."
-    />
+    <meta property="og:description" content="Just building apps I thought would be nice." />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://zachholt.github.io/" />
-    <meta name="twitter:card" content="summary_large_image" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700;800&family=Space+Grotesk:wght@400;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;700;800&family=Space+Grotesk:wght@400;600&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./styles.css" />
@@ -27,118 +20,20 @@
   <body>
     <a class="skip-link" href="#main">Skip to main content</a>
 
-    <header class="site-header">
-      <div class="container nav-wrap">
-        <p class="brand">Zach Holt</p>
-        <nav aria-label="Primary">
-          <ul class="nav-list">
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#featured">Featured</a></li>
-            <li><a href="#resources">Resources</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-
     <main id="main" class="container">
-      <section id="featured" class="hero" aria-labelledby="hero-title">
-        <p class="eyebrow">Projects Hub</p>
-        <h1 id="hero-title">Building practical products with focused UX.</h1>
-        <p class="hero-copy">
-          This is the central page for my public projects. Each project has its
-          own dedicated page, repo, and support links.
-        </p>
-        <div class="hero-actions">
-          <a class="button button-primary" href="#projects">Browse Projects</a>
-          <a class="button button-secondary" href="https://github.com/zachholt">GitHub Profile</a>
-        </div>
-      </section>
+      <h1>just building apps I thought would be nice.</h1>
 
-      <section id="projects" class="panel" aria-labelledby="projects-title">
-        <h2 id="projects-title">Projects</h2>
-        <div class="project-grid" role="list">
-          <article class="project-card" role="listitem">
-            <p class="badge">iOS</p>
-            <h3>Tweetiful</h3>
-            <p>
-              Capture clean visuals from X posts with customizable layout and
-              export controls.
-            </p>
-            <div class="project-links">
-              <a href="https://apps.apple.com/us/app/tweetiful/id6743678727">App Store</a>
-              <a href="https://zachholt.github.io/tweetiful/">Project Page</a>
-              <a href="https://github.com/zachholt/TweetShot">Source</a>
-            </div>
-          </article>
-
-          <article class="project-card" role="listitem">
-            <p class="badge">Web</p>
-            <h3>Tweetiful Policy Site</h3>
-            <p>
-              Dedicated support, privacy, and terms pages used for App Store
-              metadata and compliance.
-            </p>
-            <div class="project-links">
-              <a href="https://zachholt.github.io/tweetiful/">Support</a>
-              <a href="https://zachholt.github.io/tweetiful/privacy.html">Privacy</a>
-              <a href="https://zachholt.github.io/tweetiful/terms.html">Terms</a>
-            </div>
-          </article>
-
-          <article class="project-card" role="listitem">
-            <p class="badge">Infra</p>
-            <h3>App Ads Verification</h3>
-            <p>
-              Root domain ad verification file for AdMob publisher ownership and
-              app-ads.txt compliance.
-            </p>
-            <div class="project-links">
-              <a href="https://zachholt.github.io/app-ads.txt">View app-ads.txt</a>
-              <a href="https://github.com/zachholt/zachholt.github.io">Site Repo</a>
-            </div>
-          </article>
-        </div>
-      </section>
-
-      <section class="grid" aria-label="Focus areas">
+      <section class="cards" aria-label="Project cards">
         <article class="card">
-          <h2>Shipping fast</h2>
-          <p>
-            Lean release cycles with practical product decisions and real-world
-            feedback loops.
-          </p>
+          <img src="./assets/tweetiful-icon.png" alt="Tweetiful app icon" class="app-icon" />
+          <h2>Tweetiful</h2>
+          <div class="link-stack">
+            <a href="https://apps.apple.com/us/app/tweetiful/id6743678727">App Store</a>
+            <a href="https://zachholt.github.io/tweetiful/terms.html">Terms of Service</a>
+            <a href="https://zachholt.github.io/tweetiful/privacy.html">Privacy Policy</a>
+          </div>
         </article>
-        <article class="card">
-          <h2>Product quality</h2>
-          <p>
-            Clear onboarding, stable export flows, and production-minded
-            monetization setup.
-          </p>
-        </article>
-        <article class="card">
-          <h2>Documentation-first</h2>
-          <p>
-            Public docs and policy pages stay aligned with shipped app behavior.
-          </p>
-        </article>
-      </section>
-
-      <section id="resources" class="panel" aria-labelledby="resources-title">
-        <h2 id="resources-title">Resources</h2>
-        <p>
-          For support requests or collaboration, use
-          <a href="mailto:lovelupapp@gmail.com">lovelupapp@gmail.com</a>. The
-          ad verification file remains available at
-          <a href="https://zachholt.github.io/app-ads.txt">/app-ads.txt</a>.
-        </p>
       </section>
     </main>
-
-    <footer class="site-footer">
-      <div class="container footer-wrap">
-        <p>© 2026 Zach Holt</p>
-        <a href="https://github.com/zachholt">GitHub</a>
-      </div>
-    </footer>
   </body>
 </html>
