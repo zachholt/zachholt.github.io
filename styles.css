@@ -31,6 +31,24 @@ body {
   padding: 2.2rem 0 2.5rem;
 }
 
+.site-header {
+  border-bottom: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(6px);
+}
+
+.header-inner {
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+}
+
+.name {
+  margin: 0;
+  font-family: "Manrope", sans-serif;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
 .skip-link {
   position: absolute;
   top: -100%;
