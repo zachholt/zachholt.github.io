@@ -1,14 +1,18 @@
 :root {
-  --bg: #f4f8ff;
-  --surface: #ffffff;
-  --line: #d7e1ef;
-  --text: #0f172a;
-  --muted: #334155;
-  --accent: #0f766e;
-  --focus: #d97706;
+  --bg: #09090b;
+  --surface: #16161a;
+  --line: rgba(255, 255, 255, 0.06);
+  --text: #f4f4f5;
+  --text-secondary: #a1a1aa;
+  --muted: #71717a;
+  --accent: #a78bfa;
+  --accent-dim: rgba(167, 139, 250, 0.08);
+  --focus: #fbbf24;
 }
 
-* {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -19,10 +23,13 @@ body {
 }
 
 body {
-  font-family: "Space Grotesk", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   color: var(--text);
-  background: linear-gradient(180deg, #eef6ff, var(--bg));
+  background: var(--bg);
+  background-image: radial-gradient(ellipse 80% 50% at 50% -20%, rgba(167, 139, 250, 0.07), transparent);
   line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .container {
@@ -36,10 +43,11 @@ body {
   left: 1rem;
   z-index: 10;
   background: var(--accent);
-  color: #fff;
+  color: var(--bg);
   padding: 0.65rem 1rem;
   border-radius: 0.5rem;
   text-decoration: none;
+  font-weight: 600;
 }
 
 .skip-link:focus {
@@ -51,7 +59,7 @@ header {
   background: var(--surface);
   border: 1px solid var(--line);
   border-radius: 16px;
-  padding: 1rem;
+  padding: 1.25rem 1.5rem;
 }
 
 h1,
@@ -65,6 +73,11 @@ h1 {
   line-height: 1.15;
 }
 
+h2 {
+  color: var(--text);
+  margin-top: 1.8rem;
+}
+
 .muted {
   color: var(--muted);
 }
@@ -74,7 +87,7 @@ nav ul {
   padding: 0;
   margin: 0.75rem 0 0;
   display: flex;
-  gap: 0.6rem;
+  gap: 0.5rem;
   flex-wrap: wrap;
 }
 
@@ -82,13 +95,21 @@ nav a {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 0.5rem 0.8rem;
+  padding: 0.45rem 0.85rem;
   border-radius: 999px;
   text-decoration: none;
   border: 1px solid var(--line);
-  background: #f8fbff;
-  color: var(--text);
-  font-weight: 600;
+  background: transparent;
+  color: var(--text-secondary);
+  font-size: 0.85rem;
+  font-weight: 500;
+  transition: color 0.15s ease, border-color 0.15s ease, background 0.15s ease;
+}
+
+nav a:hover {
+  color: var(--accent);
+  border-color: rgba(167, 139, 250, 0.3);
+  background: var(--accent-dim);
 }
 
 main {
@@ -100,23 +121,41 @@ main {
   background: var(--surface);
   border: 1px solid var(--line);
   border-radius: 16px;
-  padding: 1rem;
+  padding: 1.5rem;
 }
 
 .card h2 {
+  margin-top: 1.5rem;
+}
+
+.card h2:first-child {
   margin-top: 0;
 }
 
+.card p {
+  color: var(--text-secondary);
+}
+
+.card ul {
+  color: var(--text-secondary);
+}
+
+.card li {
+  margin-bottom: 0.3rem;
+}
+
 a {
-  color: #0b5f8d;
+  color: var(--accent);
+  transition: opacity 0.15s ease;
 }
 
 a:hover {
+  opacity: 0.8;
   text-decoration: underline;
 }
 
 :focus-visible {
-  outline: 3px solid var(--focus);
+  outline: 2px solid var(--focus);
   outline-offset: 2px;
   border-radius: 6px;
 }
